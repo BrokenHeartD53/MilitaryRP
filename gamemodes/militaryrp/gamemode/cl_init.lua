@@ -1,8 +1,8 @@
 hook.Run("DarkRPStartedLoading")
 
-GM.Version = "2.6.1"
-GM.Name = "DarkRP"
-GM.Author = "By FPtje Falco et al."
+GM.Version = "Release"
+GM.Name = "MilitaryRP"
+GM.Author = "By FPtje Falco, Subject_Alpha"
 
 DeriveGamemode("sandbox")
 local function LoadModules()
