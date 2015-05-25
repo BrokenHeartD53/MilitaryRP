@@ -1,0 +1,15 @@
+"militaryrp"
+{
+	"base"		"sandbox"
+    "title"  "MilitaryRP"
+    "version"   "Release"
+    "menusystem"	"1"
+
+    "author_name"   "FPtje Falco, Subject_Alpha"
+    "author_email"  ""
+    "author_url"    "https://github.com/FPtje/DarkRP"
+
+    "icon"  ""
+    "info"  ""
+    "hide"  "0"
+}
