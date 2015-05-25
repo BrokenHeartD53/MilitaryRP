@@ -4,7 +4,7 @@ Ammo types
 ---------------------------------------------------------------------------
 Ammo boxes that can be purchased in the F4 menu.
 
-Add your custom ammo types in this file. Here's the syntax:
+--[[Add your custom ammo types in this file. Here's the syntax:
 DarkRP.createAmmoType("ammoType", {
     name = "Ammo name",
     model = "Model",
@@ -14,7 +14,7 @@ DarkRP.createAmmoType("ammoType", {
 })
 
 ammoType: The name of the ammo that Garry's mod recognizes
-	If you open your SWEP's shared.lua, you can find the ammo name next to
+	If you open your SWEPs shared.lua, you can find the ammo name next to
 	SWEP.Primary.Ammo = "AMMO NAME HERE"
 	or
 	SWEP.Secondary.Ammo = "AMMO NAME HERE"
@@ -32,7 +32,7 @@ customCheck: (Optional! Advanced!) a Lua function that describes who can buy the
 	Parameters:
 		ply: the player who is trying to buy the ammo
 
-Examples are below!
+Examples are below!]]
 ---------------------------------------------------------------------------*/
 
 -- Pistol ammo type. Used by p228, desert eagle and all other pistols
@@ -48,15 +48,28 @@ DarkRP.createAmmoType("buckshot", {
 	name = "Shotgun ammo",
 	model = "models/Items/BoxBuckshot.mdl",
 	price = 50,
-	amountGiven = 8
+	amountGiven = 16
 })
 
--- Rifle ammo, usually used by assault rifles
 DarkRP.createAmmoType("smg1", {
-	name = "Rifle ammo",
+	name = "SMG ammo",
 	model = "models/Items/BoxMRounds.mdl",
 	price = 80,
-	amountGiven = 30
+	amountGiven = 60
+})
+
+DarkRP.createAmmoType("ar2", {
+	name = "Rifle ammo",
+	model = "models/Items/BoxMRounds.mdl",
+	price = 120,
+	amountGiven = 60
+})
+
+DarkRP.createAmmoType("357", {
+	name = ".357 ammo",
+	model = "models/Items/BoxMRounds.mdl",
+	price = 20,
+	amountGiven = 12
 })
 
 DarkRP.createCategory{
