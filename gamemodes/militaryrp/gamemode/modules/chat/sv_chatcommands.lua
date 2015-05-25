@@ -207,6 +207,20 @@ local function GroupMsg(ply, args)
 end
 DarkRP.defineChatCommand("g", GroupMsg, 0)
 
+local function Roll(ply, args)
+	local DoSay = function()
+		if GAMEMODE.Config.alltalk then
+			for _, target in pairs(player.GetAll()) do
+				DarkRP.talkToPerson(target, team.GetColor(ply:Team()), ply:Nick().." has rolled a "..math.random(1,100)..".")
+			end
+		else
+			DarkRP.talkToRange(ply, ply:Nick().." has rolled a "..math.random(1,100)..".", "", 250)
+		end
+	end
+	return args, DoSay
+end
+DarkRP.defineChatCommand("roll", Roll, 1.5)
+
 -- here's the new easter egg. Easier to find, more subtle, doesn't only credit FPtje and unib5
 -- WARNING: DO NOT EDIT THIS
 -- You can edit DarkRP but you HAVE to credit the original authors!
