@@ -143,3 +143,9 @@ DarkRP.declareChatCommand{
 	description = "Send the DarkRP credits to someone.",
 	delay = 1.5
 }
+
+DarkRP.declareChatCommand{
+	command = "roll",
+	description = "Roll the dice.",
+	delay = 1.5
+}
